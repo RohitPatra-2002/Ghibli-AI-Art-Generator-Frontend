@@ -45,7 +45,7 @@ const PhotoToImageSection = () => {
         formData.append("prompt", prompt);
 
         try {
-            const API_URL = 'http://localhost:8080/api/v1/generate';
+            const API_URL = 'https://ghibli-ai-art-generator-backend-production.up.railway.app/api/v1/generate';
             const response = await fetch(API_URL, {
                 method: 'POST',
                 body: formData,
